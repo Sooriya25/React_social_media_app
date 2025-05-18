@@ -200,6 +200,23 @@ body{
 .About p{
     color: #030058;
 }
+.loader {
+  border: 6px solid #bad5fc;
+  border-top: 6px solid #4a4af7;
+  border-radius: 50%;
+  flex-grow: 1;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+  margin: 100px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
 @media only screen and (min-width: 610px){
     html{
         font-size: 14px;

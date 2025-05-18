@@ -1,5 +1,5 @@
 import axios from "axios"
 
 export default axios.create({
-    baseURL: "http://localhost:3500"
+    baseURL: "https://react-social-backend-4nt4.onrender.com"
 })

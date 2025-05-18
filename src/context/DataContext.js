@@ -16,6 +16,7 @@ export const DataProvider = ({children}) => {
   const [postBody, setPostBody] = useState("");
   const [editTitle, setEditTitle]= useState("");
   const [editBody, setEditBody] = useState("");
+  const [loading, setLoading] = useState(true);
   const {width} = useWindowSize();
 
   const navigate = useNavigate();
@@ -33,7 +34,9 @@ export const DataProvider = ({children}) => {
           console.log(err.response.headers)
         } else {
           console.log(`Error: ${err.message}`)
-        }
+        } 
+      } finally{
+          setLoading(false);
       }
     
     }
@@ -104,7 +107,7 @@ export const DataProvider = ({children}) => {
             width, search, setSearch, searchResults, handleSubmit, 
             postTitle, setPostTitle, postBody, setPostBody, posts, 
             handleEdit, editBody, setEditBody, editTitle, setEditTitle,
-            handleDelete
+            handleDelete, loading
         }}>
             {children}
         </DataContext.Provider>
