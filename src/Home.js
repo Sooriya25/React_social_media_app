@@ -6,7 +6,7 @@ import Spinner from './Spinner';
  const Home = () => {
   const {searchResults, loading} = useContext(DataContext);
 
-  if(loading) return <Spinner />
+  if(loading) return <Spinner fullScreen={true} />
 
   return (
     <main className='Home'>
