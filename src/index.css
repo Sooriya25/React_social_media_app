@@ -8,10 +8,11 @@ html{
 }
 body{
     min-height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Nunito', sans-serif;
     display: flex;
     background-color: #efefef;
 }
+
 #root{
     flex-grow: 1;
     display: flex;
@@ -32,13 +33,14 @@ body{
 .Header, .Footer {
     width: 100%;
     background-color: #709df8;
-    padding: 1rem;
+    padding: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .Header h1{
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-weight: 700;
 }
 .Header svg{
     font-size: 2rem;
@@ -61,10 +63,10 @@ body{
     padding: 1rem 0 0 0.75rem;
 }
 .searchForm input[type="text"] {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'nunito', Helvetica, sans-serif;
     width: 100%;
     min-height: 48px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding: 0.25rem;
     border-radius: 0.25rem;
     outline: none;
@@ -82,6 +84,7 @@ body{
 }
 .Nav li{
     padding: 1rem;
+    font-size: 1.3rem;
 }
 .Nav li:hover,.Nav li:focus{
     padding: 1rem;
@@ -105,14 +108,14 @@ body{
 .Home, .NewPost, .PostPage, .About, .Missing{
     width: 100%;
     flex-grow: 1;
-    padding: 1rem;
+    padding: 1.5rem;
     overflow-y: auto;
     background-color: #fff;
 }
 .post{
     margin-top: 1rem;
     padding-bottom: 1rem;
-    border-bottom: 1px solid lightgrey;
+    border-bottom: 1px solid rgba(211, 211, 211, 0.532);
 }
 .Home .post a {
     text-decoration: none;
@@ -128,15 +131,18 @@ body{
     border-bottom: none;
 }
 .postDate{
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     margin-top: 0.25rem;
     color: #0d1f46;
 }
 .postTitle{
     color: #040081;
+    font-size: 1.7rem;
 }
 .postBody{
     margin: 1rem 0;
+    font-size: 1.3rem;
+    font-weight: 600;
     color: rgb(43, 40, 106);
 }
 .newPostForm{
@@ -199,6 +205,8 @@ body{
 }
 .About p{
     color: #030058;
+    font-size: 1.3rem;
+    font-weight: 600;
 }
 .loader {
   border: 6px solid #bad5fc;
@@ -222,7 +230,7 @@ body{
         font-size: 14px;
     }
     .Header h1{
-        font-size: 2rem;
+        font-size: 3rem;
     }
     .Nav {
         flex-direction: row;
